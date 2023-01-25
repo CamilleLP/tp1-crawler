@@ -32,6 +32,7 @@ class TestCrawler(TestCase):
     def test_get_linked_urls_links(self):
         '''
         check that get_linked_urls extracts properly url from a html file
+        when there is a link in the page
         '''
         # GIVEN
         links_url = 'https://exemple.com/'
@@ -54,6 +55,7 @@ class TestCrawler(TestCase):
     def test_get_linked_urls_nolinks(self):
         '''
         check that get_linked_urls extracts properly url from a html file
+        when there is no link in the page
         '''
         # GIVEN
         links_url = 'https://exemple.com/'
