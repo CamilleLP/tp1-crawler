@@ -1,4 +1,4 @@
-from crawler import Crawler
+from CRAWLER.crawler import Crawler
 from export_url import export_url_to_txt
 
 if __name__ == '__main__':
