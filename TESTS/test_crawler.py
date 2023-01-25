@@ -1,5 +1,5 @@
 from unittest import TestCase
-from crawler import Crawler
+from CRAWLER.crawler import Crawler
 import validators
 
 class TestCrawler(TestCase):
