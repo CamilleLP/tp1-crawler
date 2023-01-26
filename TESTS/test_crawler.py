@@ -127,7 +127,6 @@ class TestCrawler(TestCase):
         # WHEN
         crawler = Crawler()
         crawler.extract_urls_sitemap(url)
-        print(crawler.urls_to_visit)
         # THEN
         self.assertGreater(len(crawler.urls_to_visit), 0)
         for url in crawler.urls_to_visit:
