@@ -29,4 +29,4 @@ if __name__ == '__main__':
     print('number of failed crawl', crawler.failed_download, '\n')
 
     export_url_to_txt(crawler.crawled_urls, "crawled_webpages.txt")
-    print("The " + str(nb) + " urls crawled have been saved in 'index.json' file")
+    print("The " + str(nb) + " urls crawled have been saved in 'crawled_webpages.txt' file")
