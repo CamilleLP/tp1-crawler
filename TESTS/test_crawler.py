@@ -137,20 +137,6 @@ class TestCrawler(TestCase):
         check that information given by info_crawl are correct
         '''
         # GIVEN
-        # according to robots.txt, possible to crawl but must wait 10 seconds between each crawl
-        url = 'https://www.banque-france.fr/'
-        # WHEN
-        crawler = Crawler()
-        infos = crawler.info_crawl(url)
-        # THEN
-        self.assertTrue(infos['is_crawlable'])
-        self.assertEqual(infos['min_delay'], 10)
-
-    def test_info_crawl2(self):
-        '''
-        check that information given by info_crawl are correct
-        '''
-        # GIVEN
         # according to robots.txt, possible to crawl, no delay required bewteen each crawl
         url = 'https://ensai.fr/'
         # WHEN
@@ -161,7 +147,7 @@ class TestCrawler(TestCase):
         self.assertIsNone(infos['min_delay'])
 
 
-    def test_info_crawl3(self):
+    def test_info_crawl2(self):
         '''
         check that information given by info_crawl are correct
         '''
