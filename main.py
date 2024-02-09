@@ -23,10 +23,10 @@ if __name__ == '__main__':
     print('visited sitemap urls \n', crawler.visited_sitemaps_urls, len(crawler.visited_sitemaps_urls), '\n')
     print('crawled urls \n', crawler.crawled_urls, len(crawler.crawled_urls), '\n')
 
-    print("ADDITIONAL INFORMATION CRAWLER: \n")
-    print('number of failed downloads', crawler.failed_download, '\n')
+    print("ADDITIONAL INFO CRAWLER: \n")
+    print('nb of failed downloads', crawler.failed_download, '\n')
     print('number of failed sitemaps', crawler.failed_sitemaps, '\n')
-    print('number of failed crawl', crawler.failed_download, '\n')
+    print('nb of failed crawl', crawler.failed_download, '\n')
 
     export_url_to_txt(crawler.crawled_urls, "crawled_webpages.txt")
     print("The " + str(nb) + " urls crawled have been saved in 'crawled_webpages.txt' file")
